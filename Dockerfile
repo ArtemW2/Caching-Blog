@@ -11,6 +11,7 @@ RUN uv sync --frozen --no-dev
 
 COPY . .
 
+RUN sed -i 's/\r$//' ./scripts/start.sh
 RUN chmod +x ./scripts/start.sh
 
 CMD ["./scripts/start.sh"]
