@@ -54,7 +54,14 @@ git clone https://github.com/ArtemW2/Caching-Blog.git
 cd Caching-Blog
 ```
 
-## 2. Запуск контейнеров
+## 2. Активация виртуального окружения
+
+```bash
+uv sync
+.venv\scripts\activate
+```
+
+## 3. Запуск контейнеров
 
 Предоставлено 2 контейнера - основное приложение и тесты
 
@@ -63,7 +70,7 @@ docker-compose up -d --build
 docker-compose -f docker-compose.test.yaml up -d --build
 ```
 
-## 3. Запуск тестов
+## 4. Запуск тестов
 
 Предоставлено 22 теста - интеграционные и юнит
 
