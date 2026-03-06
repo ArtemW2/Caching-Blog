@@ -56,6 +56,12 @@ cd Caching-Blog
 
 ## 2. Активация виртуального окружения
 
+Если uv не установлен, заранее выполните команду `
+```bash
+pip install uv
+```
+
+
 ```bash
 uv sync
 .venv\scripts\activate
